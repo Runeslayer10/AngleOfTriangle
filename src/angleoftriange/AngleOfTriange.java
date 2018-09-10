@@ -23,9 +23,9 @@ public class AngleOfTriange {
         String firstAngleInput = JOptionPane.showInputDialog("Please Enter The Angle Across The Missing Side Length");
         double angleInput = Double.parseDouble(firstAngleInput);
         double finalSide = Math.sin(angleInput);
-        double answer = (firstSide+secondSide+finalSide/2);
-        Math.round(answer);
-        JOptionPane.showMessageDialog(null,"The Final Side is"+""+answer);
+        double unroundedAnswer = (firstSide+secondSide+finalSide/2);
+        double finalAnswer = Math.round(unroundedAnswer);
+        JOptionPane.showMessageDialog(null,"The Final Side is"+" "+finalAnswer);
     }
     
 }
